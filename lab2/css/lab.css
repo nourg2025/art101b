@@ -7,3 +7,18 @@
     border: solid 1px #209096;
     background-color: #bc7711;
   }
+
+  h1{
+    color: rgb(48, 48, 154);
+    font-size: 300%;
+  }
+
+  p{
+    text-indent: 20px;
+    margin-left: 10px;
+  }
+
+  #content{
+    background-color: lightcoral;
+    border: dotted 4px darkorange;
+  }
