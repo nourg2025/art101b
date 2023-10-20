@@ -7,3 +7,11 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+  body {
+    background-image: url('img/lkab 4 image rps.png');
+    background-size: contain;
+  }
+
+  .results {
+    padding-left: 60px;
+  }
