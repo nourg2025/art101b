@@ -5,7 +5,7 @@
 */
 
 function isEven(x){
-    return (x 5 2 == 0);
+    return (x % 2 == 0);
 }
 
 // test function
