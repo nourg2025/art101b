@@ -58,7 +58,7 @@ setTimeout(surprise, 4000);
 // decorative
 function padding(x, len) {
     var length = (len - x.length);
-    var padded = ' ੈ✩‧₊˚';
+    var padded = '✩';
     var i = 0;
     while (i < ((Math.floor(length/2)*2)-5)) {
         padded += " ";
@@ -70,7 +70,7 @@ function padding(x, len) {
         padded += " ";
         ++i;
     }
-    padded += ' ੈ✩‧₊˚';
+    padded += '✩';
     return padded;
 }
 
@@ -79,7 +79,7 @@ function printStars(callbackFn) {
                 "Good work today!", "Drink some water!", "You're wonderful!"]
     var words = callbackFn(compliments[Math.floor(Math.random() * (compliments.length))], 33);
     var final = "☆ ☆ ☆ ☆ ☆<br>"+
-                ' ੈ✩‧₊˚                                                          ੈ✩‧₊˚<br>'+
+                ' ੈ✩‧₊˚                                                          ੈ✩<br>'+
                     words+
                 '<br> ੈ✩‧₊˚                                                          ੈ✩‧₊˚<br>'+
                 "☆ ☆ ☆ ☆ ☆"
