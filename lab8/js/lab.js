@@ -49,8 +49,8 @@ outputEl.innerHTML = sortResult;
 // setTimeout()
 function surprise() {
     temp = outputEl.innerHTML;
-    console.log("Surprise!")
-    outputEl.innerHTML = temp + "<div id=\"surprise\">Surprise!<div>";
+    console.log("Boo!")
+    outputEl.innerHTML = temp + "<div id=\"Boo\">Boo!<div>";
 }
 setTimeout(surprise, 5000);
 
