@@ -78,11 +78,11 @@ function printStars(callbackFn) {
     var compliments = ["I love you!", "Have a great day!", "You're lovely!", "You look great!", 
                 "Good work today!", "Drink some water!", "You're wonderful!"]
     var words = callbackFn(compliments[Math.floor(Math.random() * (compliments.length))], 33);
-    var final = "☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆<br>"+
+    var final = "☆ ☆ ☆ ☆ ☆<br>"+
                 ' ੈ✩‧₊˚                                                          ੈ✩‧₊˚<br>'+
                     words+
                 '<br> ੈ✩‧₊˚                                                          ੈ✩‧₊˚<br>'+
-                "☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆"
+                "☆ ☆ ☆ ☆ ☆"
     console.log("Stars printed!");
     document.getElementById("stars").innerHTML = final;
     return;
