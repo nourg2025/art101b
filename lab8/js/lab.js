@@ -52,7 +52,7 @@ function surprise() {
     console.log("Boo!")
     outputEl.innerHTML = temp + "<div id=\"Boo\">Boo!<div>";
 }
-setTimeout(surprise, 5000);
+setTimeout(surprise, 4000);
 
 // Task X 3
 // decorative
