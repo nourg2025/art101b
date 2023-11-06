@@ -28,13 +28,13 @@ var twoDownResult = arr.map(function(x) {
 })
 
 console.log("Original array: [" + arr +"]");
-console.log(`Nearest even'd array: [${neResult}]` );
-console.log(`Array taken down a couple pegs: [${twoDownResult}]`);
+console.log(`Nearest array: [${neResult}]` );
+console.log(`Array taken down: [${twoDownResult}]`);
 
 
 // Task X 1 - output on page using .getElementById() and .innerHTML()
 var outputEl = document.getElementById("output"); 
-var mapResults = "Original array: [" + arr +"]<br>"+`Nearest even'd array: [${neResult}]<br>`+`Array taken down a couple pegs: [${twoDownResult}]<br>`
+var mapResults = "Original array: [" + arr +"]<br>"+`Nearest array: [${neResult}]<br>`+`Array taken down: [${twoDownResult}]<br>`
 outputEl.innerHTML = mapResults; // put your results here
 
 // Task X 2 - common methods that use callbacks! .sort(), setTimeout()
