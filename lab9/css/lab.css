@@ -4,43 +4,43 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #686060;
-    background-color: #afa786;
+    border: solid 1px #b87f46;
+    background-color: #79d385;
   
   }
   
   /* Border image ref here: https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */
   .special {
-    border: 10px dotted rgb(174, 168, 107);
-    border-image-source: url(".../img/bubble border png.png");
-    border-image-slice: 33%;
-    border-image-repeat: round;
-    border-image-outset: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: rgb(77, 66, 149);
-    color: rgba(255, 255, 255, 0.906);
+    border: 10px dotted rgb(64, 177, 85);
+    border-image-source: url("../img/starborder.png");
+    border-image-slice: 43%;
+    border-image-repeat: square;
+    border-image-outset: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(139, 61, 61);
+    color: white;
     animation-name: sparkle;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
   }
   
   .special a {
-    color: rgb(89, 210, 210);
+    color: rgb(205, 175, 238);
   }
   
   .special a:visited {
-    color: rgb(142, 62, 89);
+    color: rgb(216, 168, 112);
   }
   
   /* Special thanks w3schools https://www.w3schools.com/css/css3_animations.asp */
   @keyframes sparkle {
-    0% {border-image-source: url(".../img/bubble border png.png");
+    0% {border-image-source: url("../img/starborder.png");
         border-image-outset: 5px;}
-    26% {border-image-source: url(".../img/bubble border png.png");}
-    51% {border-image-source: url(".../img/bubble border png.png");
+    25% {border-image-source: url("../img/starborder1.png");}
+    50% {border-image-source: url("../img/starborder.png");
         border-image-outset: 7px;}
-    76% {border-image-source: url(".../img/bubble border png.png");}
-    99% {border-image-source: url(".../img/bubble border png.png");
+    75% {border-image-source: url("../img/starborder1.png");}
+    100% {border-image-source: url("../img/starborder.png");
         border-image-outset: 5px;}
   }
