@@ -11,7 +11,7 @@
   
   /* Border image ref here: https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */
   .special {
-    border: 10px dotted rgb(177, 73, 64);
+    border: 10px square rgb(177, 73, 64);
     border-image-source: url("../img/starborder.png");
     border-image-slice: 43%;
     border-image-repeat: square;
