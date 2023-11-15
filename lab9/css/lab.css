@@ -1,6 +1,12 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+/*
+   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+   Requirements: jQuery must be loaded for this script to work.
+
+   Author: Nour Gabsi
+   Date: November 13 A2023
+*/
+
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
@@ -9,7 +15,7 @@
   
   }
   
-  /* Border image ref here: https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */
+ 
   .special {
     border: 10px dotted rgb(177, 73, 64);
     border-image-source: url("../img/starborder.png");
@@ -33,7 +39,7 @@
     color: rgb(216, 168, 112);
   }
   
-  /* Special thanks w3schools https://www.w3schools.com/css/css3_animations.asp */
+  
   @keyframes sparkle {
     0% {border-image-source: url("../img/starborder.png");
         border-image-outset: 5px;}
