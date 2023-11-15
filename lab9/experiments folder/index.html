@@ -9,3 +9,28 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function () {
+        $("#my-button").click(function () {
+            // Prompt the user for their name
+            var name = prompt("Name please:");
+
+            // Check if the user entered a name
+            if (name !== null && name !== "") {
+                // Your code to run when the user enters a name
+                alert("Hello, " + name + "!");
+            } else {
+                // Your code to run when the user cancels or enters an empty name
+                alert("You didn't enter a name.");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+
+<!-- Your button with the ID "my-button" -->
+<button id="my-button">Click me</button>
+
+</body>
+</html>
