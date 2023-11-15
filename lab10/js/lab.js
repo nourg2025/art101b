@@ -13,20 +13,16 @@ function generateRandomText() {
     const min = 3;
     const max = 100;
     const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
-    // Get a random starting index to slice the Lorem Ipsum text
+    // Get a random starting index to slice the Lorem blipsum text
     const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
-    // Generate the random Lorem Ipsum-like text
+    // Generate the random Lorem blipsum-like text
     return text.slice(randStart, randStart + randLen);
   }
   
   // Event listener for button click
   $("#make-convo").click(function() {
-    // Get user input
-    const userInput = $("#userInput").val();
-    
-    // If user input is provided, use it; otherwise, generate random text
-    const newText = userInput.trim() !== '' ? userInput : generateRandomText();
-    
+    // Get new fake dialogue
+    const newText = generateRandomText();
     // Append a new div to our output div
     $("#output").append('<div class="text"><p>' + newText + '</p></div>');
   });
