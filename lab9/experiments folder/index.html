@@ -34,3 +34,31 @@
 
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        $("#my-button").click(function () {
+            // Prompt the user for their name
+            var name = prompt("Name please:");
+
+            // Check if the user entered a name
+            if (name !== null && name !== "") {
+                // Change the text of the h1 element with the ID "title"
+                $('#title').html('Hello ' + name + '!');
+            } else {
+                // Your code to run when the user cancels or enters an empty name
+                alert("You didn't enter a name.");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+
+<!-- Your button with the ID "my-button" -->
+<button id="my-button">Click me</button>
+
+<!-- Your h1 element with the ID "title" -->
+<h1 id="title">Original Text</h1>
+
+</body>
+</html>
