@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Example</title>
+</head>
+<body>
+
+  <label for="input">Enter your name: </label>
+  <input type="text" id="input">
+  <button id="submitButton">Submit</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#submitButton").on("click", function() {
+        var name = $("#input").val();
+        alert("Hello, " + name + "!");
+        // You can replace the alert with any other logic you want to perform with the entered name.
+      });
+    });
+  </script>
+
+</body>
+</html>
