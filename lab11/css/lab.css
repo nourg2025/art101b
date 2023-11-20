@@ -20,11 +20,11 @@
   }
   
   .text {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier Prime', Courier, monospace;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(45, 47, 146);
+    color: rgb(146, 45, 89);
   }
 
   .size {
