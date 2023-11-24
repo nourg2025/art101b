@@ -1,24 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #ff0000, #ff9900, #ffdb58, #32cd32, #6495ed, #8a2be2);
     margin: 0;
+    color: #fff;
 }
 
 section {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 10px;
     padding: 15px;
-    border: 2px solid #3498db;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #3498db;
+    color: #333;
 }
 
 p {
-    color: #555;
+    color: #333;
 }
 
 label {
@@ -31,13 +31,13 @@ input {
     margin-bottom: 10px;
     padding: 10px;
     width: 100%;
-    border: 1px solid #3498db;
+    border: 2px solid #333;
     border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #e74c3c;
+    background: linear-gradient(to right, #ff0000, #ff9900, #ffdb58, #32cd32, #6495ed, #8a2be2);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -46,15 +46,15 @@ button {
 }
 
 button:hover {
-    background-color: #c0392b;
+    filter: brightness(1.2);
 }
 
 #output {
     margin-top: 20px;
     padding: 15px;
-    border: 2px solid #2ecc71;
+    border: 2px solid #333;
     border-radius: 10px;
-    background-color: #ecf0f1;
-    color: #333;
+    background: linear-gradient(to right, #ff0000, #ff9900, #ffdb58, #32cd32, #6495ed, #8a2be2);
+    color: #fff;
     font-weight: bold;
 }
