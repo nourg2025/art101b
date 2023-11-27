@@ -6,5 +6,4 @@ $(document).ready(function () {
         // Change the text inside the game container
         $(this).html('<p>You clicked! Game in progress...</p>');
     });
-    // You can add more game logic and functionality here as needed
 });
