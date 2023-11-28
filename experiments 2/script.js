@@ -16,7 +16,11 @@ function drop(event) {
     event.target.appendChild(draggedElement);
 }
 
-// Add event listeners to the bowl for drop
+// Add event listeners to the bowl and ingredients for drop
 var bowl = document.getElementById("bowl");
 bowl.addEventListener("dragover", allowDrop);
 bowl.addEventListener("drop", drop);
+
+var ingredients = document.getElementById("ingredients");
+ingredients.addEventListener("dragover", allowDrop);
+ingredients.addEventListener("drop", drop);
