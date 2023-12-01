@@ -1,0 +1,20 @@
+/* lab.css */
+
+/* Add colorful styling for the special sections */
+.special {
+    background-color: #ffcccb; /* Adjust color as needed for special sections */
+}
+
+/* Style the bonus button with vibrant colors */
+.bonus-button {
+    background-color: #f39c12; /* Adjust color as needed for bonus button background */
+    color: #fff; /* Adjust color as needed for bonus button text */
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Adjust styles for the special sections and bonus button as needed */
