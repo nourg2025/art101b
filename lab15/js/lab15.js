@@ -1,37 +1,36 @@
-// Replace the URL with the API endpoint you want to use
-URL = "https://your-api-url/api/random";
+
+//URL = "https://www.boredapi.com/api/activity/"
+// URL = "https://api.kanye.rest/"
+//URL = "https://api.whatdoestrumpthink.com/api/v1/quotes/random"
+URL = "https://api.nasa.gov/planetary/apod?api_key=RgNBs4TjYNVjwPSQLLvkMtIj4zOflKWVB3TikTry"
 
 // attach click action to button
 $('#action').click(function(){
-    // get data via ajax from the specified API endpoint
+    // get data via ajax from numbersapi
+    // Using the core $.ajax() method
     $.ajax({
         // The URL for the request (ENDPOINT)
         url: URL,
-        // The type of request
+        // The data to send (will be converted to a query string)
+        // data: { api_key: RgNBs4TjYNVjwPSQLLvkMtIj4zOflKWVB3TikTry},
+        // Whether this is a POST or GET request
         type: "GET",
         // The type of data we expect back
-        dataType: "json",
-        // Any additional parameters you want to include
-        // data: { count: 5, offset: 0 },
+        // dataType : "json",
     })
     // If the request succeeds
     .done(function(data) {
         console.log(data);
-        // Process the API response as needed
-        // For example, displaying clues in a list
-        var cluesList = "<ul>";
-        $.each(data, function(index, clue) {
-            cluesList += "<li>" + clue.question + "</li>";
-        });
-        cluesList += "</ul>";
+        // make our JSON data printable
+        var printableData = "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+        // put data in webpage
+        // $("#output").append("<p>" + JSON.stringify(data));
+        // $("#output").append("<p>Here's what you should do when you are bored: <b>" + data.activity);
+        // $("#output").append(printableData);
+        // $("#output").append("<p>The most stable smart man in the room says: <b>" + data.quote);
+        $("#title").html(data.title)
+        $("#output").append("<img src=" + data.url + ">");
+        $("#output").append("<p>" + data.explanation);
 
-        // Display the clues on the webpage
-        $("#output").html(cluesList);
     })
-    // If the request fails
-    .fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("Error: " + textStatus + " - " + errorThrown);
-        // Handle the error as needed
-        $("#output").html("Error fetching data from the API");
-    });
 });
