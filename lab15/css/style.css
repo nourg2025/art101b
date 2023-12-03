@@ -1,0 +1,91 @@
+/* css/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    margin: 20px;
+}
+
+/* Challenge Section */
+#challenge {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Problems Section */
+#problems {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Results Section */
+#results {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Output Div */
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Button Styles */
+#activate {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#activate:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    section {
+        margin: 10px;
+    }
+
+    #output {
+        margin-top: 10px;
+    }
+}
